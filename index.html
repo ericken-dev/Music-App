@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <script src="https://kit.fontawesome.com/d5e7b3878e.js" crossorigin="anonymous"></script>
+<link rel="stylesheet"type="text/css"href="Music.css">
+
+  </style>
+</head>
+<body>
+  <div class="ContM">
+    <div class="Music">
+      <Nav>
+        <div class="Circle">
+          <i class="fa-solid fa-angles-left"></i>
+        </div>
+        <div class="Circle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </Nav>
+  <img src="picMinefield .jpeg" alt="Album Art">
+      <h1>Minefields</h1>
+      <p>By Faouzia ft. John Legend</p>
+      <audio id="song">
+        <source src="Faouzia  John Legend  Minefields Official Music Video.mp3" type="audio/mpeg">
+      </audio>
+      <input type="range" value="0" id="progress">
+      <div class="time-display">
+        <span id="current-time">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+      <div class="controls">
+        <div onclick="skipBackward()">
+          <i class="fa-solid fa-backward"></i>
+        </div>
+        <div onclick="playPause()">
+          <i class="fa-solid fa-play" id="ctIcon"></i>
+        </div>
+        <div onclick="skipForward()">
+          <i class="fa-solid fa-forward"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="Script.js"></script>
+</body>
+</html>
